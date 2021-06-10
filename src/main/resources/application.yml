@@ -1,0 +1,18 @@
+# SERVER CONFIGURATION - GENERAL:
+
+server:
+  port: 8081
+  servlet:
+    context-path: /
+
+# PERSISTENCE - LOCAL MYSQL DATABASE:
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    initialization-mode: always
+    url: jdbc:mysql://localhost:3306/nhs?createDatabaseIfNotExist=true
+    username: "Szocs Mihai"
+    password: "P@ssW0rd!"
